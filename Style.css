@@ -1,0 +1,96 @@
+body {
+      margin: 0;
+      font-family: 'Courier New', monospace;
+      background-color: #0e1117;
+      color: #c9d1d9;
+    }
+
+    header {
+      background-color: #161b22;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 2px solid #58a6ff;
+    }
+
+    header h1 {
+      margin: 0;
+      color: #58a6ff;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      background-color: #0d1117;
+      border-bottom: 1px solid #30363d;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #58a6ff;
+      text-decoration: none;
+      margin: 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #79c0ff;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+      border-bottom: 1px solid #30363d;
+    }
+
+    h2 {
+      color: #79c0ff;
+    }
+
+    .lenguaje {
+      margin-top: 30px;
+    }
+
+    .dato {
+      background-color: #161b22;
+      border-left: 4px solid #58a6ff;
+      padding: 10px;
+      margin: 10px 0;
+      font-style: italic;
+    }
+
+    .img-lenguaje {
+      width: 100%;
+      max-width: 400px;
+      display: block;
+      margin: 10px auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #58a6ff55;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #0e1117;
+      color: #8b949e;
+      font-size: 0.9em;
+    }
+
+    #volver-arriba {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #58a6ff;
+      color: #0d1117;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      display: none;
+      box-shadow: 0 0 10px #58a6ff55;
+    }
