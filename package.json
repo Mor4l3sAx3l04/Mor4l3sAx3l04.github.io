@@ -1,0 +1,12 @@
+{
+  "name": "programas_js_moralesfloresaxeluriel_5iv9",
+  "version": "1.0.0",
+  "main": "back.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "web-dev-server --node-resolve --open --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

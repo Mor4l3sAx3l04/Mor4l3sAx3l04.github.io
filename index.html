@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicios JavaScript</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <h1>Ejercicios de JavaScript</h1>
+
+  <!-- 1. Inversión -->
+  <section>
+    <h2>1. Inversión con 2% mensual</h2>
+    <label>Capital: <input type="number" id="capital"></label>
+    <button onclick="ej1()">Calcular</button>
+    <p id="res1" class="resultado"></p>
+  </section>
+
+  <!-- 2. Sueldo + comisiones -->
+  <section>
+    <h2>2. Sueldo + comisiones</h2>
+    <label>Sueldo base: <input type="number" id="sueldo"></label>
+    <label>Venta 1: <input type="number" id="v1"></label>
+    <label>Venta 2: <input type="number" id="v2"></label>
+    <label>Venta 3: <input type="number" id="v3"></label>
+    <button onclick="ej2()">Calcular</button>
+    <p id="res2" class="resultado"></p>
+  </section>
+
+  <!-- 3. Descuento -->
+  <section>
+    <h2>3. Descuento del 15%</h2>
+    <label>Total de compra: <input type="number" id="compra"></label>
+    <button onclick="ej3()">Calcular</button>
+    <p id="res3" class="resultado"></p>
+  </section>
+
+  <!-- 4. Calificación -->
+  <section>
+    <h2>4. Calificación final</h2>
+    <label>Parcial 1: <input type="number" id="p1"></label>
+    <label>Parcial 2: <input type="number" id="p2"></label>
+    <label>Parcial 3: <input type="number" id="p3"></label>
+    <label>Examen final: <input type="number" id="examen"></label>
+    <label>Trabajo final: <input type="number" id="trabajo"></label>
+    <button onclick="ej4()">Calcular</button>
+    <p id="res4" class="resultado"></p>
+  </section>
+
+  <!-- 5. Edad -->
+  <section>
+    <h2>5. Calcular edad</h2>
+    <label>Año de nacimiento: <input type="number" id="nac"></label>
+    <label>Año actual: <input type="number" id="actual" value="2025"></label>
+    <button onclick="ej5()">Calcular</button>
+    <p id="res5" class="resultado"></p>
+  </section>
+
+  <!-- 6. Palabras a números -->
+  <section>
+    <h2>6. Palabras a números</h2>
+    <label>Escribe palabras separadas por coma (ej: cero,uno,tres):</label>
+    <input type="text" id="palabras">
+    <button onclick="ej6()">Convertir</button>
+    <p id="res6" class="resultado"></p>
+  </section>
+
+  <!-- 7. Horas extras -->
+  <section>
+    <h2>7. Horas extras</h2>
+    <label>Horas trabajadas: <input type="number" id="horas"></label>
+    <label>Pago por hora: <input type="number" id="pagoHora"></label>
+    <button onclick="ej7()">Calcular</button>
+    <p id="res7" class="resultado"></p>
+  </section>
+
+  <!-- 8. Utilidad -->
+  <section>
+    <h2>8. Utilidad anual</h2>
+    <label>Salario mensual: <input type="number" id="salario"></label>
+    <label>Años en la empresa: <input type="number" id="antig"></label>
+    <button onclick="ej8()">Calcular</button>
+    <p id="res8" class="resultado"></p>
+  </section>
+
+  <!-- 9. Formulario validación -->
+  <section>
+    <h2>9. Formulario con validación (al perder foco y al enviar)</h2>
+    <form id="registro" novalidate>
+      <label for="nombre">Nombre (obligatorio)</label>
+      <input id="nombre" type="text" />
+      <div id="err-nombre" class="error"></div>
+
+      <label for="email">Email (obligatorio)</label>
+      <input id="email" type="email" />
+      <div id="err-email" class="error"></div>
+
+      <label for="password">Password (mín. 6 caracteres, al menos minúscula, mayúscula y dígito)</label>
+      <input id="password" type="password" />
+      <div id="err-password" class="error"></div>
+
+      <label for="comentarios">Comentarios (obligatorio, máximo 50 caracteres)</label>
+      <textarea id="comentarios" rows="3"></textarea>
+      <div id="err-comentarios" class="error"></div>
+
+      <label>
+        <input id="acepto" type="checkbox" />
+        Acepto las condiciones del servicio (obligatorio)
+      </label>
+      <div id="err-acepto" class="error"></div>
+
+      <button type="submit">Enviar</button>
+    </form>
+    <p id="res9" class="resultado"></p>
+  </section>
+
+  <!-- 10: Sanitizar HTML (eliminar script tags y su contenido) -->
+  <section>
+    <h2>10. Eliminar &lt;script&gt;...</script&gt; de una cadena HTML</h2>
+    <label for="htmlInput">Pega aquí una cadena HTML (ej. con &lt;script&gt;):</label>
+    <textarea id="htmlInput" rows="4"></textarea>
+    <button id="btnSanitizar">Sanitizar</button>
+    <p>Resultado:</p>
+    <pre id="res10" style="background:#eef;padding:10px;border-radius:6px;"></pre>
+  </section>
+  
+  <script src="back.js"></script>
+</body>
+</html>
